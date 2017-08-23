@@ -1,0 +1,29 @@
+最近看到朋友圈里面发送自己制作的微信词云，挺有意思。问了下，通过python小工具自动实现，上去研究了下，原来和上次搞的微信机器人同一个原理，都是用的itchat库。
+
+不明白itchat库制作机器人转发微信群之间的消息，见文章《微信群之间消息自动转发简明教程（Github上免费共享有代码和教程）》。
+
+全栈工程师，出马调代码。
+
+这次原理还是很简单，python调用itchat库模拟微信网页登录，调用接口获取好友信息，返回好友性别以及签名，根据获取的信息制作词云和统计好友性别。
+
+代码共享在https://github.com/jiezhu2007/python-wechat-itchat，大家可以下载下来调一调，挺好玩。步骤如下：
+
+1、安装依赖库
+
+pip install itchat
+
+pip install jieba
+
+pip install pillow
+
+pip install wordcloud
+
+pip install echarts-python
+
+2、运行signature_cloud.py；获得词云图片。
+
+3、运行wechat_fri_sexual.py；获得好友性别比例图片。
+
+4、结果如下：
+
+1）作者朋友们还是比较积极向上的。
